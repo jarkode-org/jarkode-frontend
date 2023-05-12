@@ -12,7 +12,7 @@ const routes = [
     { path: "/", name: 'home', component: Editor },
     { path: "/post", name: 'post', component: allPost },
     { path: "/post/create", name: 'create', component: createPost },
-    { path: "/post/:id/edit", name: 'edit', component: editPost },
+    // { path: "/post/:id/edit", name: 'edit', component: editPost },
     { path: "/post/:slug", name: 'show', component: showPost },
     { path: "/quest", name: 'quest', component: allQuest },
     { path: "/quest/create", name: 'qcreate', component: createQuest },
