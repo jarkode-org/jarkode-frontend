@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <div class="wrapper" style="display: block;">
+    <div class="wrapper">
       <div class="input-wrapper border border-light border-top-0 border-bottom-0">
         <div class="input-header">
           <div class="tab-header">
@@ -134,12 +134,26 @@ export default {
 </script>
 
 <style>
-.input-wrapper {
-  background-color: #dddddd;
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.output-header {
-  background-color: #dddddd;
+@media screen and (min-width: 768px) {
+  .wrapper {
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .input-wrapper, .output-wrapper {
+    width: 100%;
+  }
+}
+
+.active {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
 }
 
 .tab-header {
@@ -151,15 +165,15 @@ export default {
   cursor: pointer;
 }
 
-.active {
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-}
-
 .input-wrapper {
+  background-color: #dddddd;
   width: 50%;
   float: left;
   /* margin-right: 10px; */
+}
+
+.output-header {
+  background-color: #dddddd;
 }
 
 .output-wrapper {

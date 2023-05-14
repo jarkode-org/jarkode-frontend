@@ -34,7 +34,7 @@ export default {
             Swal.fire({
                 title: 'About',
                 // text: 'Aplikasi Ini Dibuat Oleh: M. Ikhwan Fahmi Ardiansyah',
-                html: '<div><h2>Aplikasi ini dibuat oleh:</h2><img src="src/components/image/about.png" alt="My Image"><p></p><p>M. Ikhwan Fahmi A. (18050974026)</p><p>S1 Pendidikan Teknologi Informasi</p><p>Universitas Negeri Surabaya</p></div>',
+                html: '<div><h2>Aplikasi ini dibuat oleh:</h2><img src="/src/components/image/about.png" alt="My Image"><p></p><p>M. Ikhwan Fahmi A. (18050974026)</p><p>S1 Pendidikan Teknologi Informasi</p><p>Universitas Negeri Surabaya</p></div>',
                 confirmButtonText: 'OK',
                 confirmButtonColor: '#007bff'
             });
