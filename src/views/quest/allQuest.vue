@@ -30,7 +30,7 @@ export default {
     };
   },
   mounted() {
-    axios.get('http://localhost:8000/api/quests').then((response) => {
+    axios.get('https://jarkodeapp.000webhostapp.com/api/quests').then((response) => {
       this.quests = response.data.data;
     });
   },

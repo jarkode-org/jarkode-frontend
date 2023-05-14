@@ -32,7 +32,7 @@ export default {
     const router = useRouter()
     const route = useRoute()
     // const slug = this.$route.params.slug; // get the slug parameter from the route
-    axios.get(`http://localhost:8000/api/posts/${route.params.slug}`)
+    axios.get(`https://jarkodeapp.000webhostapp.com/api/posts/${route.params.slug}`)
     .then(response => {
       this.post = response.data.data;
     })
@@ -62,7 +62,7 @@ export default {
     // }
     deletePost(id) {
       if (confirm('Are you sure?')){
-        axios.delete(`http://localhost:8000/api/posts/${id}/delete`)
+        axios.delete(`https://jarkodeapp.000webhostapp.com/api/posts/${id}/delete`)
         .then(response => {
           // Handle successful response
           console.log(response);

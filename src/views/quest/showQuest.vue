@@ -32,7 +32,7 @@ export default {
     const router = useRouter()
     const route = useRoute()
     // const slug = this.$route.params.slug; // get the slug parameter from the route
-    axios.get(`http://localhost:8000/api/quests/${route.params.kd}`)
+    axios.get(`https://jarkodeapp.000webhostapp.com/api/quests/${route.params.kd}`)
     .then(response => {
       this.quest = response.data.data;
     })

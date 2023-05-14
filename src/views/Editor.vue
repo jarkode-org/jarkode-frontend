@@ -64,7 +64,7 @@ export default {
   },
   data() {
     return {
-      apiEndPoint : 'http://localhost:8000/api/code-glot',
+      apiEndPoint : 'https://jarkodeapp.000webhostapp.com/api/code-glot',
       apiData: '',
       code: '',
       hasil: '',
